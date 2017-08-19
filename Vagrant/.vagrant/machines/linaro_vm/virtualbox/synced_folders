@@ -1,1 +1,0 @@
-{"virtualbox":{"/mnt":{"guestpath":"/mnt","hostpath":"/Users/dmitchell","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/dmitchell/code/Linaro_qemu/Vagrant","disabled":false,"__vagrantfile":true}}}
