@@ -19,7 +19,7 @@ This repo contains two ways to run a Linaro (ARMv7) Emulator.  One is natively v
 
 ## Todo
 ### For Native OSX
-* TBD
+*
 ### For the Virtualbox VM
 * Install a list of packages that replicate the Linaro systems I am looking to replicate and recreate the box 
 * Script the startup and ssh connection into the Linaro system for easier startup

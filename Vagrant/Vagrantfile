@@ -1,0 +1,15 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+    config.vm.define "linaro_vm" do |linaro|
+    linaro.vm.box_url = "https://dl.dropboxusercontent.com/u/7976553/Linaro/linaro_vm_runs.box"
+    linaro.vm.box = "linaro_vm"
+    linaro.vm.synced_folder "~/", "/mnt"
+    linaro.vm.provider "virtualbox" do |g|
+      g.customize ["modifyvm", :id, "--memory", "4096", "--uartmode1", "disconnected"]
+    end
+    linaro.vm.network :public_network
+    #linaro.ssh.username = "ubuntu"
+  end
+end
