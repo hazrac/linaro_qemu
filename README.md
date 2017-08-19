@@ -36,7 +36,7 @@ This repo contains two ways to run a Linaro (ARMv7) Emulator.  One is natively v
 
 ### For the Virtualbox VM
 * The disk image file seems to get corrupted in the box.  If I recreate it once the VM is created, it is fine.  The files impacted are minor (/etc/mtab seems to be consistantly impacted. Doing an ls -la on that file will tell you if your image is corrupted).  This may allow the box to still be used for minor testing, but may not work to test config management on Linaro for example.
-* Given I'm using the vexpress emulator the system is limited to 1GB of memory.  For my purposes I need 2GB.
+* Given I'm using the vexpress emulator the system is limited to 1GB of memory.  For my purposes I need 2GB. (I can do this by replicating my script from nativeOSX)
 * Currently I'm unable to go from the Linaro instance to the physical hosts connection, which limits my ability to access the Internet for updates/packages.
 
 ## Linaro Details
