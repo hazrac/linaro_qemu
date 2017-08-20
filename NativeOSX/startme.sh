@@ -44,5 +44,5 @@ echo "Starting qemu. Wait 5min and use another terminal to ssh in via ssh linaro
   -redir tcp:2223::22 -m 2048M \
   -append "root=/dev/mmcblk0p2 rootfstype=ext2 vga=normal mem=512M devtmpfs.mount=0 rw" \
   -display none \
-  -drive file=$DISK_IMG,if=sd,cache=writeback
+  -drive format=raw,file=$DISK_IMG,if=sd,cache=writeback
 
